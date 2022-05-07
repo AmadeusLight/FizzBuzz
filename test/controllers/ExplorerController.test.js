@@ -24,5 +24,12 @@ describe("Unit Tests Explorer Controller ", () => {
 
         expect(explorersUsername).not.toBe("");
     });
+    test("4) Filter Explorers By Stack", () => {
 
+        const explorersInNode = ExplorerController.getExplorersByStack("javascript");
+
+        expect(explorersInNode.length).toBe(11);
+
+
+    });
 });
