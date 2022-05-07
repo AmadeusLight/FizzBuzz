@@ -11,4 +11,18 @@ describe("Unit Tests for ExplorerService Class", () => {
 
 
     });
-  })
+  
+    test("2) Test applyValidationNumber", () => {
+        const trick1 = FizzbuzzService.applyValidationNumber(1);
+        const trick2 = FizzbuzzService.applyValidationNumber(3);
+        const trick3 = FizzbuzzService.applyValidationNumber(5);
+        const trick4 = FizzbuzzService.applyValidationNumber(15);
+
+        expect(trick1).toBe(1);
+        expect(trick2).toBe("fizz");
+        expect(trick3).toBe("buzz");
+        expect(trick4).toBe("fizzbuzz");
+    });
+});
+
+  
